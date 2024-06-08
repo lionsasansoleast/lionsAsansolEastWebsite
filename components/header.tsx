@@ -30,7 +30,7 @@ const Header = () => {
           </div>
         </Link>
 
-        <div className="flex items-center justify-end md:justify-between">
+        {/* <div className="flex items-center justify-end md:justify-between">
           <nav aria-label="Global" className="hidden md:block">
             <ul className="flex items-center gap-6 text-sm">
               {navItems.map((item, index) => (
@@ -65,7 +65,7 @@ const Header = () => {
               </svg>
             </button>
           </div>
-        </div>
+        </div> */}
       </div>
     </header>
   );
