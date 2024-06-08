@@ -28,7 +28,7 @@ const Footer = () => {
             <li>
               <a
                 className="text-gray-700 transition hover:text-gray-700/75"
-                href="#"
+                href="#about"
               >
                 {" "}
                 About{" "}
@@ -38,7 +38,7 @@ const Footer = () => {
             <li>
               <a
                 className="text-gray-700 transition hover:text-gray-700/75"
-                href="#"
+                href="#services"
               >
                 {" "}
                 Services{" "}
@@ -48,20 +48,10 @@ const Footer = () => {
             <li>
               <a
                 className="text-gray-700 transition hover:text-gray-700/75"
-                href="#"
+                href="#appointment"
               >
                 {" "}
-                Contact
-              </a>
-            </li>
-
-            <li>
-              <a
-                className="text-gray-700 transition hover:text-gray-700/75"
-                href="#"
-              >
-                {" "}
-                Blog{" "}
+                Book Appointment
               </a>
             </li>
           </ul>

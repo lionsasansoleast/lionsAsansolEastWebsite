@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Logo from "../app/icons/logo";
 
 const navItems = [
@@ -19,7 +20,7 @@ const Header = () => {
   return (
     <header className="bg-white sticky top-0 z-10 py-2">
       <div className="container flex h-16 max-w-screen-xl justify-between items-center gap-8 px-4 sm:px-6 lg:px-8">
-        <a className="block" href="#">
+        <Link className="block" href="/">
           <div className="flex gap-2 items-center">
             <Logo className="w-16 h-16" />
             <div className="flex flex-col">
@@ -27,7 +28,7 @@ const Header = () => {
               <span className="text-sm text-gray-500">Eye Hospital</span>
             </div>
           </div>
-        </a>
+        </Link>
 
         <div className="flex items-center justify-end md:justify-between">
           <nav aria-label="Global" className="hidden md:block">
