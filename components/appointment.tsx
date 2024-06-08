@@ -5,7 +5,7 @@ const Appointment = () => {
         Book your appointment
       </h2>
       <p className="text-lg text-center mt-2 font-light">
-        "Alone we can do so little; together we can do so much." - Lions Club
+       {`"Alone we can do so little; together we can do so much." - Lions Clubs International`}
       </p>
       <div className="container mx-auto px-4 flex flex-col md:flex-row items-center mt-8">
         <div className="w-[600px] max-w-full mx-auto">
