@@ -1,4 +1,4 @@
-import Logo from "../icons/logo";
+import Logo from "../app/icons/logo";
 
 const navItems = [
   {
@@ -7,11 +7,11 @@ const navItems = [
   },
   {
     name: "Services",
-    href: "#",
+    href: "#services",
   },
   {
-    name: "Contact",
-    href: "#",
+    name: "Book Appointment",
+    href: "#appointment",
   },
 ];
 

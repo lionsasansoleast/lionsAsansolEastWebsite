@@ -4,6 +4,8 @@ import {
   Carousel,
   CarouselContent,
   CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
 } from "@/components/ui/carousel";
 import Image from "next/image";
 import Autoplay from "embla-carousel-autoplay";
@@ -15,13 +17,28 @@ type ImageProps = {
 };
 const carouselImages: ImageProps[] = [
   {
-    src: "/images/image1.jpeg",
-    title: "Hospital Women Staff",
+    src: "/images/lions-family.jpg",
+    title: "Welcome to Lions Eye Hospital Asansol",
     description: "",
   },
   {
-    src: "/images/image2.jpeg",
-    title: "Hospital Staff",
+    src: "/images/lions-hospital-front.jpg",
+    title: "Lions Asansol East Eye Hospital",
+    description: "",
+  },
+  {
+    src: "/images/ambulance.jpeg",
+    title: "Patient Transport",
+    description: "",
+  },
+  {
+    src: "/images/operation-theatre.jpeg",
+    title: "Operation Theatre",
+    description: "",
+  },
+  {
+    src: "/images/image1.jpeg",
+    title: "Hospital Women Staff",
     description: "",
   },
   {
@@ -48,7 +65,7 @@ const carouselImages: ImageProps[] = [
 
 const Hero = () => {
   return (
-    <section className="">
+    <section className="relative">
       <Carousel
         opts={{
           loop: true,
@@ -71,7 +88,7 @@ const Hero = () => {
                 />
 
                 <div
-                  className={`absolute p-4 bottom-0 right-0 m-8 rounded-lg bg-blue-600/80`}
+                  className={`absolute p-4 bottom-0 right-0 m-8 rounded-lg bg-blue-800/80`}
                 >
                   <div className="text-white">
                     <h2 className="text-2xl font-light">{image.title}</h2>
@@ -82,6 +99,8 @@ const Hero = () => {
             </CarouselItem>
           ))}
         </CarouselContent>
+        <CarouselNext className="right-4 bg-white/60 hover:bg-white" ></CarouselNext>
+        <CarouselPrevious className="left-4 bg-white/60 hover:bg-white"/>
       </Carousel>
     </section>
   );

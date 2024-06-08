@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Optometrist from "./optometrist";
 
 const About = () => {
   return (
@@ -6,13 +7,7 @@ const About = () => {
       <div className="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8 lg:py-16">
         <div className="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-16">
           <div className="relative h-[200px] overflow-hidden rounded-full lg:order-last lg:h-full">
-            <Image
-              alt="Smiling boy doing eye test"
-              src={"/images/smiling-boy-eye.png"}
-              className="inset-0 w-full h-full object-contain"
-              width={200}
-              height={200}
-            />
+            <Optometrist />
           </div>
 
           <div className="lg:py-24">

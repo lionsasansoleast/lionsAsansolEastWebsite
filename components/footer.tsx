@@ -1,4 +1,4 @@
-import Logo from "../icons/logo";
+import Logo from "../app/icons/logo";
 
 const currentYear = new Date().getFullYear();
 
@@ -6,17 +6,7 @@ const Footer = () => {
   return (
     <footer className="bg-gray-100">
       <div className="relative mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8 lg:pt-24">
-        <div className="absolute end-4 top-4 sm:end-6 sm:top-6 lg:end-8 lg:top-8">
-          <a
-            className="inline-block rounded-full bg-blue-600 p-2 text-white shadow transition hover:bg-blue-500 sm:p-3 lg:p-4"
-            href="#MainContent"
-          >
-            <span className="sr-only">Back to top</span>
-
-            <Logo />
-            
-          </a>
-        </div>
+        
 
         <div className="lg:flex lg:items-end lg:justify-between">
           <div>
