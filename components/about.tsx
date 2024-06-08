@@ -6,7 +6,7 @@ const About = () => {
     <section className="bg-blue-50" id="about">
       <div className="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8 lg:py-16">
         <div className="flex flex-col-reverse md:flex-row gap-4 items-center">
-          <div className="relative md:h-[200px] overflow-hidden rounded-full lg:order-last lg:h-full">
+          <div className="transform scale-50 md:scale-100">
             <Optometrist />
           </div>
 
