@@ -79,7 +79,7 @@ const Hero = () => {
         <CarouselContent>
           {carouselImages.map((image, index) => (
             <CarouselItem key={index}>
-              <div className="h-[600px] relative">
+              <div className="h-[300px] lg:h-[600px] relative">
                 <Image
                   src={image.src}
                   alt={image.title}
@@ -91,7 +91,7 @@ const Hero = () => {
                   className={`absolute p-4 bottom-0 right-0 m-8 rounded-lg bg-blue-800/80`}
                 >
                   <div className="text-white">
-                    <h2 className="text-2xl font-light">{image.title}</h2>
+                    <h2 className="text-sm md:text-2xl font-light">{image.title}</h2>
                     <p>{image.description}</p>
                   </div>
                 </div>
