@@ -1,4 +1,9 @@
-import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "./ui/accordion";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "./ui/accordion";
 
 const faqs = [
   {
@@ -43,15 +48,13 @@ const FAQs = () => {
           {faqs.map((faq, index) => (
             <AccordionItem key={index} value={faq.question}>
               <AccordionTrigger className="flex justify-between items-center py-4 border-b border-gray-200">
-                <h3 className="text-lg font-medium">{faq.question}</h3>
+                <h3 className="text-lg font-medium text-left">{faq.question}</h3>
               </AccordionTrigger>
               <AccordionContent className="py-4">
                 <p>{faq.answer}</p>
               </AccordionContent>
             </AccordionItem>
-          ))    
-        }
-          
+          ))}
         </Accordion>
       </div>
     </section>

@@ -11,8 +11,8 @@ const navItems = [
     href: "#services",
   },
   {
-    name: "Book Appointment",
-    href: "#appointment",
+    name: "Contact Us",
+    href: "#contact-us",
   },
 ];
 
@@ -30,7 +30,7 @@ const Header = () => {
           </div>
         </Link>
 
-        {/* <div className="flex items-center justify-end md:justify-between">
+        <div className="flex items-center justify-end md:justify-between">
           <nav aria-label="Global" className="hidden md:block">
             <ul className="flex items-center gap-6 text-sm">
               {navItems.map((item, index) => (
@@ -46,7 +46,7 @@ const Header = () => {
             </ul>
           </nav>
 
-          <div className="flex items-center gap-4">
+          <div className="hidden md:flex items-center gap-4">
             <button className="block rounded bg-gray-100 p-2.5 text-gray-600 transition hover:text-gray-600/75 md:hidden">
               <span className="sr-only">Toggle menu</span>
               <svg
@@ -65,7 +65,7 @@ const Header = () => {
               </svg>
             </button>
           </div>
-        </div> */}
+        </div>
       </div>
     </header>
   );
